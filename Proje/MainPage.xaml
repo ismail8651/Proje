@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proje.MainPage">
+
+    <ContentPage x:Name="HomePage"  Title="Home" IconImageSource="baseline_home_black_24dp.png">
+        <ContentPage.Content>
+            <StackLayout>
+                <Label Text="Full Name"/>
+                <Entry x:Name="name"/>
+                <Label Text="Phone Number"/>
+                <Entry x:Name="number"/>
+                <Label Text="Job"/>
+                <Entry x:Name="job"/>
+                <Button x:Name="add_Button"  Text="Add Customer"  ImageSource="baseline_add_box_black_24dp.png" Clicked="add_Button_clicked"/>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage x:Name="ListsPage" Title="Customers" IconImageSource="baseline_list_black_24dp.png" >
+        <ContentPage.Content>
+            <StackLayout>
+                <Label Text="Customer List:" TextColor="Black" FontSize="25" VerticalOptions="Center" FontAttributes="Bold"/>
+                <ListView x:Name="Cus_list_View"
+                          HasUnevenRows="True"
+                          ItemTapped="Cus_list_View_ItemTapped">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Vertical">
+                                    <Label Text="{Binding fName}" FontSize="20" TextColor="Black" />
+                                </StackLayout>
+                                <ViewCell.ContextActions>
+                                    <MenuItem  CommandParameter="{Binding Id}" Clicked="OnDelete" Text="Delete" IsDestructive="True"/>
+                                </ViewCell.ContextActions>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+
+                </ListView>
+                <Button Clicked="refresh_Button_clicked" Text="Refresh" ImageSource="baseline_autorenew_black_24dp.png"/>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+    <ContentPage x:Name="DeletedPage" Title="Deleted" IconImageSource="baseline_delete_black_24dp.png">
+        <ContentPage.Content>
+            <StackLayout>
+                <ListView x:Name="Cusdel_list_View"
+                          HasUnevenRows="True"
+                          ItemTapped="Cus_list_View_ItemTapped">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Vertical">
+                                    <Label Text="{Binding fName}" FontSize="20" TextColor="Black" />
+                                </StackLayout>
+                                <ViewCell.ContextActions>
+                                    <MenuItem  CommandParameter="{Binding Id}"  Text="Delete" IsDestructive="True"/>
+                                </ViewCell.ContextActions>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Button Clicked="refresh_Button2_clicked" Text="Refresh" ImageSource="baseline_autorenew_black_24dp.png"/>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+</TabbedPage>

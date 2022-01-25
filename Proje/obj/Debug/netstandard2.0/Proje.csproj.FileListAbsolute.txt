@@ -1,0 +1,15 @@
+C:\Users\zeker\source\repos\Proje\Proje\bin\Debug\netstandard2.0\Proje.deps.json
+C:\Users\zeker\source\repos\Proje\Proje\bin\Debug\netstandard2.0\Proje.dll
+C:\Users\zeker\source\repos\Proje\Proje\bin\Debug\netstandard2.0\ref\Proje.dll
+C:\Users\zeker\source\repos\Proje\Proje\bin\Debug\netstandard2.0\Proje.pdb
+C:\Users\zeker\source\repos\Proje\Proje\obj\Debug\netstandard2.0\Proje.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zeker\source\repos\Proje\Proje\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\zeker\source\repos\Proje\Proje\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\zeker\source\repos\Proje\Proje\obj\Debug\netstandard2.0\Proje.AssemblyInfoInputs.cache
+C:\Users\zeker\source\repos\Proje\Proje\obj\Debug\netstandard2.0\Proje.AssemblyInfo.cs
+C:\Users\zeker\source\repos\Proje\Proje\obj\Debug\netstandard2.0\Proje.csproj.CoreCompileInputs.cache
+C:\Users\zeker\source\repos\Proje\Proje\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\zeker\source\repos\Proje\Proje\obj\Debug\netstandard2.0\Proje.dll
+C:\Users\zeker\source\repos\Proje\Proje\obj\Debug\netstandard2.0\ref\Proje.dll
+C:\Users\zeker\source\repos\Proje\Proje\obj\Debug\netstandard2.0\Proje.pdb
+C:\Users\zeker\source\repos\Proje\Proje\obj\Debug\netstandard2.0\Proje.csproj.AssemblyReference.cache
